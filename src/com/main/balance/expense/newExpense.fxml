@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="595.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.balance.expense.NewExpenseController">
+   <children>
+      <Label layoutX="18.0" layoutY="16.0" text="EXPENCE CATEGORY:" textFill="ORANGE">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="62.0" text="EXPANCE INFO:" textFill="ORANGE">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="112.0" text="EXPENCE DATE:" textFill="ORANGE">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="162.0" text="EXPENCE AMOUNT:" textFill="ORANGE">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="expenseCategoryLabel" layoutX="299.0" layoutY="13.0" prefHeight="30.0" prefWidth="278.0" text="EXPENCE CATEGORY" textFill="RED">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="expenseNameTF" layoutX="299.0" layoutY="55.0" prefHeight="37.0" prefWidth="270.0" promptText="ENTER DETAILS INFO...">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="16.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="expenseDateDP" layoutX="299.0" layoutY="105.0" prefHeight="37.0" prefWidth="270.0" promptText="Select a date..." />
+      <TextField fx:id="expenseAmountTF" layoutX="299.0" layoutY="155.0" prefHeight="37.0" prefWidth="270.0" promptText="ENTER AMOUNT...">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="warningsLabel" layoutX="26.0" layoutY="253.0" prefHeight="24.0" prefWidth="546.0" text="NOTIFICATION:" textFill="RED">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmButton" layoutX="299.0" layoutY="208.0" mnemonicParsing="false" onAction="#confirmButtonPressed" style="-fx-background-radius: 7; -fx-background-color: ORANGE;" text="CONFIRM">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

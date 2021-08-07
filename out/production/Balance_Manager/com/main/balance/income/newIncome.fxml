@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="258.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.main.balance.income.NewIncomeController">
+    <children>
+      <Label layoutX="16.0" layoutY="12.0" text="INCOME CATEGORY:" textFill="ORANGE">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="53.0" text="INCOME INFO:" textFill="ORANGE">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="98.0" text="INCOME DATE:" textFill="ORANGE">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="144.0" text="INCOME AMOUNT:" textFill="ORANGE">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="incomeCategoryLabel" layoutX="300.0" layoutY="9.0" prefHeight="30.0" prefWidth="280.0" text="INCOME CATEGORY" textFill="RED">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="incomeNameTF" layoutX="300.0" layoutY="47.0" prefHeight="35.0" prefWidth="280.0" promptText="ENTER INCOME INFO...">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="20.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="incomeDateDP" layoutX="300.0" layoutY="92.0" prefHeight="35.0" prefWidth="280.0" promptText="Enter date of income..." />
+      <TextField fx:id="incomeAmountTF" layoutX="300.0" layoutY="138.0" prefWidth="280.0" promptText="ENTER INCOME INFO...">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="20.0" />
+         </font>
+      </TextField>
+      <Label fx:id="warningsLabel" layoutX="14.0" layoutY="228.0" prefHeight="21.0" prefWidth="570.0" text="NOTIFICATION:" textFill="RED">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmButton" layoutX="299.0" layoutY="182.0" mnemonicParsing="false" onAction="#confirmButtonPressed" style="-fx-background-radius: 7; -fx-background-color: ORANGE;" text="APPLY">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
